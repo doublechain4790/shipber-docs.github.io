@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Address | Shipber API</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/images/logo.png">
+    <meta name="description" content=" ">
+    
+    <link rel="preload" href="/assets/css/0.styles.b0f80ed0.css" as="style"><link rel="preload" href="/assets/js/app.34b96c40.js" as="script"><link rel="preload" href="/assets/js/2.bc39b5d7.js" as="script"><link rel="preload" href="/assets/js/8.f52e0c6b.js" as="script"><link rel="prefetch" href="/assets/js/10.dd909993.js"><link rel="prefetch" href="/assets/js/11.803b79cb.js"><link rel="prefetch" href="/assets/js/12.658193b8.js"><link rel="prefetch" href="/assets/js/13.f8f81f4c.js"><link rel="prefetch" href="/assets/js/3.c34ef0de.js"><link rel="prefetch" href="/assets/js/4.f1e88496.js"><link rel="prefetch" href="/assets/js/5.17948a37.js"><link rel="prefetch" href="/assets/js/6.29039c55.js"><link rel="prefetch" href="/assets/js/7.b05b3bad.js"><link rel="prefetch" href="/assets/js/9.61254ddf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b0f80ed0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.png" alt="Shipber API" class="logo"> <span class="site-name can-hide">Shipber API</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/sidebar/API/" class="nav-link router-link-active">
+  Documents
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/sidebar/API/" class="nav-link router-link-active">
+  Documents
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/sidebar/API/" aria-current="page" class="sidebar-link">Overview</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>API</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/sidebar/API/Information.html" class="sidebar-link">Personal information</a></li><li><a href="/sidebar/API/Address.html" aria-current="page" class="active sidebar-link">Address</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/sidebar/API/Address.html#ship-from-list" class="sidebar-link">Ship From List</a></li><li class="sidebar-sub-header"><a href="/sidebar/API/Address.html#address-validation" class="sidebar-link">Address Validation</a></li></ul></li><li><a href="/sidebar/API/Rate.html" class="sidebar-link">Rate</a></li><li><a href="/sidebar/API/Label.html" class="sidebar-link">Label</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="address"><a href="#address" class="header-anchor">#</a> Address</h1> <h2 id="ship-from-list"><a href="#ship-from-list" class="header-anchor">#</a> Ship From List</h2> <table><tr><td bgcolor="#bdbdbd">GET</td><td>/v1/open-api/ship-from</td></tr></table> <h3 id="header"><a href="#header" class="header-anchor">#</a> Header</h3> <table><thead><tr><th style="text-align:center;">Label</th> <th style="text-align:center;">Required</th> <th style="text-align:center;">Description</th></tr></thead> <tbody><tr><td style="text-align:center;">Api-Key</td> <td style="text-align:center;">✓</td> <td style="text-align:center;">Api Key, please log in to the system and find it in My Profile</td></tr> <tr><td style="text-align:center;">Api-Secret</td> <td style="text-align:center;">✓</td> <td style="text-align:center;">Api Secret, please log in to the system and find it in My Profile</td></tr></tbody></table> <h3 id="example-curl"><a href="#example-curl" class="header-anchor">#</a> Example Curl</h3> <div class="language-json extra-class"><pre class="language-json"><code>curl -X GET  \
+  'https<span class="token operator">:</span><span class="token comment">//api.sandbox.shipber.app/v1/open-api/ship-from' \</span>
+  -H 'Content-Type<span class="token operator">:</span>application/json' \ 
+  -H 'Api-Key<span class="token operator">:</span>2cn1wgmfidytin3jef3b' \
+  -H 'Api-Secret<span class="token operator">:</span>qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C'
+</code></pre></div><h3 id="response-parameters"><a href="#response-parameters" class="header-anchor">#</a> Response parameters</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22d953b7-24c4-4ae9-afb4-111cc227b01e&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;postal_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;90045&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;country_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;US&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;state_or_province_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;CA&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;is_residential&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;addresses&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;5353 W Imperial Hwy Unit 900&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;city&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Los Angeles&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;address_classification&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Commercial&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Amazon&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;phone&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0000000000&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;attention&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Tom&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="address-validation"><a href="#address-validation" class="header-anchor">#</a> Address Validation</h2> <table><tr><td bgcolor="#bdbdbd">POST</td><td>/v1/open-api/address/validate</td></tr></table> <h3 id="header-2"><a href="#header-2" class="header-anchor">#</a> Header</h3> <table><thead><tr><th style="text-align:center;">Label</th> <th style="text-align:center;">Required</th> <th style="text-align:center;">Description</th></tr></thead> <tbody><tr><td style="text-align:center;">Api-Key</td> <td style="text-align:center;">✓</td> <td style="text-align:center;">Api Key, please log in to the system and find it in My Profile</td></tr> <tr><td style="text-align:center;">Api-Secret</td> <td style="text-align:center;">✓</td> <td style="text-align:center;">Api Secret, please log in to the system and find it in My Profile</td></tr></tbody></table> <h3 id="entity-types"><a href="#entity-types" class="header-anchor">#</a> Entity Types</h3> <p><strong>The address recognition API is currently designed to recognize the following types of entities:</strong></p> <table><thead><tr><th style="text-align:center;">Parameter</th> <th style="text-align:center;">Type</th> <th style="text-align:center;">Required</th> <th>Description</th></tr></thead> <tbody><tr><td style="text-align:center;">addresses</td> <td style="text-align:center;">[array]</td> <td style="text-align:center;">✓</td> <td>-</td></tr> <tr><td style="text-align:center;">city</td> <td style="text-align:center;">[string]</td> <td style="text-align:center;">✓</td> <td>-</td></tr> <tr><td style="text-align:center;">state_province_code</td> <td style="text-align:center;">[string]</td> <td style="text-align:center;">✓</td> <td>State shortcode</td></tr> <tr><td style="text-align:center;">postal_code</td> <td style="text-align:center;">[string]</td> <td style="text-align:center;">✓</td> <td>-</td></tr> <tr><td style="text-align:center;">country_code</td> <td style="text-align:center;">[string]</td> <td style="text-align:center;">✓</td> <td>-</td></tr> <tr><td style="text-align:center;">is_residential</td> <td style="text-align:center;">[boolean]</td> <td style="text-align:center;">✓</td> <td>If you send true,this address is residintial.If you send false,this address is commercial</td></tr></tbody></table> <h3 id="example-curl-2"><a href="#example-curl-2" class="header-anchor">#</a> Example Curl</h3> <div class="language-json extra-class"><pre class="language-json"><code>curl -X POST  \
+  'https<span class="token operator">:</span><span class="token comment">//api.sandbox.shipber.app/v1/open-api/address/validate' \</span>
+  -H 'Content-Type<span class="token operator">:</span>application/json' \
+  -H 'Api-Key<span class="token operator">:</span>2cn1wgmfidytin3jef3b' \
+  -H 'Api-Secret<span class="token operator">:</span>qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C' \
+  -d '<span class="token punctuation">{</span>
+    <span class="token property">&quot;addresses&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;5353 W Imperial Hwy Unit 900&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;city&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Los Angeles&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;state_province_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;CA&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;postal_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;90045&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;country_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;US&quot;</span>
+<span class="token punctuation">}</span>'
+</code></pre></div><h3 id="response-parameters-2"><a href="#response-parameters-2" class="header-anchor">#</a> Response parameters</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Commercial&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;original_address&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;postal_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;90045&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;country_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;US&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;state_or_province_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;CA&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;is_residential&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;addresses&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;5353 W Imperial Hwy Unit 900&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;city&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Los Angeles&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;address_classification&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Commercial&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;matched_address&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;postal_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;90045&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;country_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;US&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;state_or_province_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;CA&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;is_residential&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;addresses&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;5353 W Imperial Hwy Unit 900&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;city&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Los Angeles&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;address_classification&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Commercial&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/sidebar/API/Information.html" class="prev">
+        Personal information
+      </a></span> <span class="next"><a href="/sidebar/API/Rate.html">
+        Rate
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.34b96c40.js" defer></script><script src="/assets/js/2.bc39b5d7.js" defer></script><script src="/assets/js/8.f52e0c6b.js" defer></script>
+  </body>
+</html>
